@@ -475,30 +475,24 @@ Preview.callback.autoReset = true;  // make sure it can run more than once
 <script>
 function smallHint(){
   var smallHint=document.getElementById("smallHint").value;
- // console.log(val);
+
   document.getElementById("displaySmallHint").innerHTML = smallHint; 
   MyArray[index].smallHint=smallHint;
-  //console.log(index);
-  //console.log(MyArray[index].smallHint);
+ 
   document.getElementById(id).title=smallHint;
 }
 
 function bigHint(){
   var bigHint=document.getElementById("bigHint").value;
- // console.log(val);
   
   MyArray[index].bigHint=bigHint;
   document.getElementById("displayBigHint").innerHTML = MyArray[index].bigHint ;
-  //console.log(index);
-  //console.log(MyArray[index].bigHint);
+
 }
 
 function URLs(){
   var urls=document.getElementById("URLs").value;
-  //document.getElementById("displayURLs").innerHTML = urls;
   MyArray[index].URLs=urls;
-  //console.log(index);
-  //console.log(MyArray[index].URLs);
 
   document.getElementById("anchor1").href=MyArray[index].URLs;
   document.getElementById("anchor1").innerHTML = MyArray[index].URLs; 
