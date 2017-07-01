@@ -144,14 +144,6 @@ var Preview = {
     preview.style.position = ""; preview.style.visibility = "";
   },
 
-  //
-  //  This gets called when a key is pressed in the textarea.
-  //  We check if there is already a pending update and clear it if so.
-  //  Then set up an update to occur after a small delay (so if more keys
-  //    are pressed, the update won't occur until after there has been 
-  //    a pause in the typing).
-  //  The callback function is set up below, after the Preview object is set up.
-  //
   Update: function () {
     if (this.timeout) {clearTimeout(this.timeout)}
     this.timeout = setTimeout(this.callback,this.delay);
