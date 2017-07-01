@@ -132,11 +132,6 @@ var Preview = {
     this.buffer = document.getElementById("MathBuffer");
   },
 
-  //
-  //  Switch the buffer and preview, and display the right one.
-  //  (We use visibility:hidden rather than display:none since
-  //  the results of running MathJax are more accurate that way.)
-  //
   SwapBuffers: function () {
     var buffer = this.preview, preview = this.buffer;
     this.buffer = buffer; this.preview = preview;
